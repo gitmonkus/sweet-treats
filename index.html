@@ -19,6 +19,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" href="img/favicon32.png" />
     <link rel="stylesheet" href="css/index.css" />
     <title>Sweet Treats</title>
   </head>
@@ -60,16 +61,18 @@
         <img src="img/ice-cream.jpg" alt="ice cream cones" />
       </div>
       <div class="width2 flavors-text">
-        <h2>OUR FLAVORS</h2>
-        <h3>Fresh n' Tasty!</h3>
-        <p>
-          I'm a paragraph. Click here to add your own text and edit me. It’s
-          easy. Just click “Edit Text” or double click me to add your own
-          content and make changes to the font.
-        </p>
-        <p class="dark-button">
-          <a href="flavors.html">SWEETS</a>
-        </p>
+        <div class="text-width">
+          <h2>OUR FLAVORS</h2>
+          <h3>Fresh n' Tasty!</h3>
+          <p>
+            I'm a paragraph. Click here to add your own text and edit me. It’s
+            easy. Just click “Edit Text” or double click me to add your own
+            content and make changes to the font.
+          </p>
+          <p class="dark-button">
+            <a href="flavors.html">SWEETS</a>
+          </p>
+        </div>
       </div>
     </section>
     <!-- Flavors END -->
@@ -83,90 +86,89 @@
       </p>
       <img
         class="enjoy-img"
-        src="img/cone-countess.png"
+        src="img/enjoy-ice-cream.png"
         alt="delicious dessert"
       />
     </section>
     <!-- Enjoy END -->
 
     <!-- Our place START -->
-    <section class="ourplace-section">
-      <div>
-        <h2>OUR FLAVORS</h2>
-        <h3>Fresh n' Tasty!</h3>
-        <p>
-          I'm a paragraph. Click here to add your own text and edit me. It’s
-          easy. Just click “Edit Text” or double click me to add your own
-          content and make changes to the font.
-        </p>
-        <a href="flavors.html">Sweets</a>
+    <section class="ourplace-section overflow">
+      <div class="width2 ourplace-text">
+        <div>
+          <h2>OUR PLACE</h2>
+          <h3>Ice Cream by the sea!</h3>
+          <p>
+            I'm a paragraph. Click here to add your own text and edit me. It’s
+            easy. Just click “Edit Text” or double click me to add your own
+            content and make changes to the font.
+          </p>
+          <p class="dark-button">
+            <a href="flavors.html">Sweets</a>
+          </p>
+        </div>
       </div>
-      <div><img src="" alt="" /></div>
+      <div class="width2 overflow">
+        <img src="img/ice-cream-seller.jpg" alt="ice cream seller" />
+      </div>
     </section>
     <!-- Our place END -->
 
     <!-- Get yours START -->
-    <section class="enjoy-section">
-      <h2>Enjoy</h2>
-      <p>DAIRY FREE</p>
-      <p>
-        <a href="flavors.html">Sweets</a>
+    <section class="getyours-section">
+      <h2 class="mt white-font z-text">GET YOURS</h2>
+      <p class="getyours-text white-font z-text">WE DELIVER</p>
+      <p class="button white-font z-text">
+        <a href="flavors.html">ORDER ONLINE</a>
       </p>
+      <img
+        class="getyours-img"
+        src="img/delivery-truck.png"
+        alt="ice cream delivery truck"
+      />
     </section>
     <!-- Get yours END -->
 
     <!-- Desserts START -->
-    <section class="desserts-section">
-      <div><img src="" alt="" /></div>
-      <div>
-        <h2>OUR FLAVORS</h2>
-        <h3>Fresh n' Tasty!</h3>
+    <section class="desserts-section overflow">
+      <div class="width2 overflow">
+        <img src="img/dessert.jpg" alt="four row ice cream plate" />
+      </div>
+      <div class="width2 desserts-text">
+        <h2>DESSERTS</h2>
+        <h3>Ice Cream Goodies</h3>
         <p>
           I'm a paragraph. Click here to add your own text and edit me. It’s
           easy. Just click “Edit Text” or double click me to add your own
           content and make changes to the font.
         </p>
-        <a href="flavors.html">Sweets</a>
+        <p class="dark-button">
+          <a href="flavors.html">Sweets</a>
+        </p>
       </div>
     </section>
     <!-- Desserts END -->
 
-    <!-- Image START -->
-    <section class="image-section">
-      <img src="" alt="" />
-    </section>
-    <!-- Image END -->
-
-    <!-- Image links START -->
-    <section>
-      <div><img src="" alt="" /></div>
-      <div><img src="" alt="" /></div>
-      <div><img src="" alt="" /></div>
-      <div><img src="" alt="" /></div>
-    </section>
-
-    <!-- Image links END -->
-
     <!-- Footer START -->
-    <footer>
-      <div>
-        <div>
-          <p>ADDRESS</p>
+    <footer class="footer-section">
+      <div class="address-text width2">
+        <div class="width3 address-text-content">
+          <h3>ADDRESS</h3>
           <p>555 Sweets Dr. Sweetville, SV 09283</p>
         </div>
-        <div>
-          <p>CONTACT</p>
+        <div class="width3 address-text-content">
+          <h3>CONTACT</h3>
           <p>info@sweetsweettreats.com</p>
           <p>Tel: 555-555-5555</p>
         </div>
-        <div>
-          <p>HOURS</p>
+        <div class="width3 address-text-content">
+          <h3>HOURS</h3>
           <p>OPEN DAILY</p>
           <p>10AM-10PM</p>
         </div>
       </div>
-      <div>
-        <p>MAILING LIST</p>
+      <div class="width2 mailing-list">
+        <h3>MAILING LIST</h3>
         <form
           class="form"
           name="contact"
@@ -175,30 +177,30 @@
           netlify-honeypot="bot-field"
           data-netlify="true"
         >
-          <p class="hidden">
-            <label
-              >Don’t fill this out if you’re human:
-              <input type="text" name="bot-field"
-            /></label>
-          </p>
-          <p>
-            <label>Name: <input type="text" name="name" required /></label>
-          </p>
+          <label for="bot-field" class="hidden"
+            >Don’t fill this out if you’re human:
 
-          <p>
-            <label>Email: <input type="email" name="Email" required /></label>
-          </p>
+            <input type="text" name="bot-field"
+          /></label>
 
+          <label for="email"
+            >Email: <input type="email" name="email" required
+          /></label>
           <div data-netlify-recaptcha="true"></div>
-          <p>
-            <button id="contact-btn" class="contact-btn" type="submit">
-              SUBSCRIBE
-            </button>
-          </p>
+          <button id="contact-btn" class="button form-btn" type="submit">
+            SUBSCRIBE
+          </button>
         </form>
-        <p>
-          <a href="">facebook</a><a href="">twitter</a><a href="">instagram</a>
-        </p>
+        <div class="social-img">
+          <a href="https://twitter.com"
+            ><img src="img/fb.svg" aria-hidden="true"
+          /></a>
+          <a href="https://facebook.com"
+            ><img src="img/tweet.svg" aria-hidden="true" /></a
+          ><a href="https://instagram.com"
+            ><img src="img/instagram.svg" aria-hidden="true"
+          /></a>
+        </div>
       </div>
     </footer>
     <!-- Footer END -->
