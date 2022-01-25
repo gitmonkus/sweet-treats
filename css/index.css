@@ -28,8 +28,7 @@ body {
 
 body {
   font-family: "Roboto", sans-serif;
-  /* font-family: "Montserrat", sans-serif; */
-
+  line-height: 1.6;
   color: var(--font-color);
 }
 
@@ -38,6 +37,12 @@ a {
   color: inherit;
   margin: 16px;
   font-size: 1.2rem;
+  transition: all 300ms ease;
+  display: inline-block;
+}
+
+a:hover {
+  transform: translateY(-5px);
 }
 
 li {
@@ -63,7 +68,7 @@ h2 {
 }
 
 .button {
-  padding: 0.5em 1em;
+  padding: 1em 2em;
   color: var(--light-color);
   background: none;
   border: 2px solid var(--light-color);
@@ -78,7 +83,7 @@ h2 {
 }
 
 .dark-button {
-  padding: 0.5em 1em;
+  padding: 1em 2em;
   border: 2px solid var(--font-color);
   font-weight: bold;
   transition: all 300ms ease;
@@ -228,10 +233,12 @@ h2 {
 .footer-section {
   background: var(--menu-background);
   display: flex;
+  flex-wrap: wrap;
 }
 
 .address-text {
   display: flex;
+  flex-wrap: wrap;
   padding: 2em;
 }
 
@@ -241,7 +248,8 @@ h2 {
 }
 
 .mailing-list {
-  padding: 2em 4em;
+  width: 500px;
+  margin-left: 4em;
 }
 
 .mailing-list label {
@@ -250,8 +258,9 @@ h2 {
 
 .mailing-list input {
   display: block;
-  width: 50%;
-  padding: 1em;
+  font-size: 1.1em;
+  width: 100%;
+  padding: 0.5em;
   margin-bottom: 1em;
   border: 2px solid transparent;
   transition: all 300ms ease;
@@ -266,19 +275,97 @@ h2 {
 }
 
 .form-btn {
-  width: 50%;
+  width: 100%;
   font-size: 1.2rem;
   padding: 0.5em 1em;
+  background: inherit;
+  color: inherit;
 }
 
 .form-btn:hover {
   cursor: pointer;
 }
 
+.social {
+  width: 50%;
+}
+
 .social-img {
   display: flex;
   width: 32px;
   height: 32px;
-  margin: 0 1em;
-  padding: 1em;
+  margin-left: 1em;
+}
+
+.social-img ul {
+  width: 50%;
+}
+
+.social-img li {
+  margin: 1em;
+}
+
+@media (max-width: 870px) {
+  /* GENERAL */
+
+  .text-width {
+    width: 100%;
+  }
+
+  .width3 {
+    width: 100%;
+    /* padding: 1em; */
+    text-align: center;
+  }
+
+  .width2 {
+    width: 100%;
+    padding: 0;
+  }
+
+  /* MAIN HEADER */
+
+  .nav-menu {
+    justify-content: center;
+  }
+
+  /* Menu section | Enjoy section | Getyours section */
+
+  .menu-text,
+  .enjoy-text,
+  .getyours-text {
+    font-size: 4.2rem;
+  }
+
+  /* Ourplace section */
+
+  .ourplace-text {
+    padding: 1em;
+  }
+
+  /* Flavors section | Ourplace section | Desserts section*/
+
+  .flavors-text,
+  .desserts-text {
+    padding: 1em;
+  }
+  .flavors-section,
+  .ourplace-section,
+  .desserts-section {
+    height: auto;
+  }
+
+  .address-text {
+    width: 100%;
+    padding: 1em;
+  }
+
+  .mailing-list {
+    width: 100%;
+    padding: 1em;
+  }
+
+  * {
+    text-align: center;
+  }
 }
