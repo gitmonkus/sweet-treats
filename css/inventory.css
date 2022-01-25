@@ -1,0 +1,12 @@
+:root {
+    --light-color: #fff;
+    --light-color-alpha: rgba(255, 255, 255, 0.7);
+    --dark-color: #000;
+    --dark-color-alpha: rgba(0, 0, 0, 0.7);
+    --font-color: #5d6063;
+    --link-color: #5995da;
+    --hover-color: #067ded;
+    --menu-background: #f9db79;
+    --enjoy-background: #b5e8d5;
+    --getyours-background: #ffbfb3;
+  }
