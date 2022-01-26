@@ -26,7 +26,7 @@
   <body>
     <!-- Announcement Banner START -->
     <section class="announcement-banner">
-      <p>FREE shipping for orders over $75!</p>
+      <p>SUBSCRIBE to our mailing list!</p>
     </section>
     <!-- Announcement Banner END -->
 
@@ -42,9 +42,69 @@
         </ul>
       </nav>
       <div class="width3"><h1 class="brand">Sweet Treats</h1></div>
-      <div class="width3 log-in"><a href="Log in">LOG IN</a></div>
+      <div class="width3 log-in">
+        <a id="sign-up">SIGN UP</a>
+        <a id="log-in">LOG IN</a>
+      </div>
     </header>
     <!-- Header END -->
+
+    <!-- SIGN UP FORM START  -->
+    <section class="form-container animate hidden">
+      <button class="form-close-btn dark-button" type="button">X</button>
+      <div class="form-brand">
+        <h1 class="brand">Sweet Treats</h1>
+      </div>
+      <p>Don't miss out! <strong>Register NOW!</strong></p>
+      <div id="register-message" class="register-message"></div>
+      <form
+        id="register"
+        class="form-input-container"
+        name="st-register"
+        method="POST"
+      >
+        <label for="name">Name:</label>
+        <input type="text" name="name" maxlength="256" required />
+        <label for="email">Email:</label>
+        <input type="email" name="email" maxlength="256" required />
+        <label for="password">Password:</label>
+        <input type="password" name="password" maxlength="256" required />
+        <button class="dark-button" type="submit">REGISTER</button>
+      </form>
+    </section>
+
+    <!-- SIGN UP FORM END -->
+
+    <!-- LOG IN FORM START  -->
+    <section class="form-container animate hidden">
+      <button class="form-close-btn dark-button" type="button">X</button>
+      <div class="form-brand">
+        <h1 class="brand">Sweet Treats</h1>
+      </div>
+      <p>Welcome back! <strong>Log in NOW!</strong></p>
+      <div id="login-message" class="login-message"></div>
+
+      <form
+        id="login"
+        class="form-input-container"
+        name="st-login"
+        method="POST"
+      >
+        <label for="email">Email:</label>
+        <input type="email" name="email" maxlength="256" required />
+        <label for="password">Password:</label>
+        <input
+          id="password"
+          type="password"
+          name="password"
+          maxlength="256"
+          required
+        />
+        <button class="dark-button" type="submit">LOG IN</button>
+      </form>
+    </section>
+
+    <!-- LOG IN FORM END -->
 
     <!-- Menu START -->
     <section class="menu-section">
@@ -145,7 +205,8 @@
         <p>
           LOG IN NOW! to select your favorite mouth watering delights, see
           real-time inventory, and be notified when your favorite Sweet Treats
-          are available.
+          are available. You'll also join our amazing and tantalizing mailing
+          list of glory!
         </p>
         <p>
           <a class="dark-button" href="flavors.html">Sweets</a>
@@ -173,7 +234,7 @@
           <p>8AM-8PM</p>
         </div>
       </div>
-      <div class="width2 mailing-list">
+      <!-- <div class="width2 mailing-list">
         <h3>JOIN our <span class="brand">Sweet Treats</span> MAILING LIST!</h3>
         <form name="contact" method="POST">
           <label for="email"
@@ -184,25 +245,27 @@
             SUBSCRIBE
           </button>
         </form>
-        <div>
-          <ul class="social-img">
-            <li>
-              <a href="https://twitter.com"
-                ><img src="img/fb.svg" alt="facebook icon social media"" /></a
-              >
-            </li>
-            <li>
-              <a href="https://facebook.com"
-                ><img src="img/tweet.svg" alt="twitter icon social media"" /></a
-              >
-            </li>
-            <li>
-              <a href="https://instagram.com"
-                ><img src="img/instagram.svg" alt="instagram icon social media"
-              /></a>
-            </li>
-          </ul>
-        </div>
+        <div> -->
+      <div class="width2 social-img">
+        <h4><span class="brand">Sweet Treats</span> Social Networks</h4>
+        <p>Follow US on social media for the greatest social sweetness!</p>
+        <ul>
+          <li>
+            <a href="https://twitter.com"
+              ><img src="img/fb.svg" alt="facebook icon social media"
+            /></a>
+          </li>
+          <li>
+            <a href="https://facebook.com"
+              ><img src="img/tweet.svg" alt="twitter icon social media"
+            /></a>
+          </li>
+          <li>
+            <a href="https://instagram.com"
+              ><img src="img/instagram.svg" alt="instagram icon social media"
+            /></a>
+          </li>
+        </ul>
       </div>
     </footer>
     <!-- Footer END -->

@@ -35,28 +35,24 @@ body {
 a {
   text-decoration: none;
   color: inherit;
-  margin: 16px;
+  margin: 1em;
   font-size: 1.2rem;
   transition: all 300ms ease;
   display: inline-block;
 }
 
-a:hover {
-  transform: translateY(-5px);
-}
-
 li {
   list-style: none;
-}
-ul {
-  margin: 0;
-  padding: 0;
 }
 
 h2 {
   font-size: 2.4rem;
 }
 
+h4 {
+  margin-top: 2em;
+  margin-bottom: 0;
+}
 .hidden {
   display: none;
 }
@@ -80,6 +76,7 @@ h2 {
 .dark-button:hover {
   background: var(--font-color);
   border: 2px solid var(--font-color);
+  cursor: pointer;
 }
 
 .dark-button {
@@ -135,7 +132,10 @@ h2 {
   flex-wrap: wrap;
   background: var(--menu-background);
 }
-
+.main-header a:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
 .nav-menu {
   display: flex;
 }
@@ -143,6 +143,83 @@ h2 {
 .log-in {
   text-align: right;
 }
+
+/* FORM */
+
+.form-container {
+  background: var(--light-color-alpha);
+  width: 350px;
+  padding: 1em;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  z-index: 3;
+  box-shadow: 0 4px 8px -4px var(--font-color);
+}
+
+.form-container p {
+  text-align: center;
+}
+
+.form-input-container {
+  display: flex;
+  flex-direction: column;
+  background: var(--light-color-alpha);
+  padding: 1em;
+}
+
+.form-brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.form-brand h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.form-brand img {
+  width: 80px;
+  top: 14%;
+  position: relative;
+}
+
+/* .form-close-btn {
+  font-size: 1.2em;
+  padding: 0.1em 0.3em 0;
+} */
+
+input {
+  border: 1px solid var(--font-color);
+  padding: 1em;
+  color: inherit;
+  font-family: inherit;
+  transition: all 300ms ease;
+  margin-bottom: 1em;
+  font-size: 1.2rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+/* Add Zoom Animation */
+.animate {
+  animation: animatezoom 300ms;
+  transform-origin: top center;
+}
+
+@keyframes animatezoom {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 /* Menu section | Enjoy section | Getyours section */
 .menu-section,
 .enjoy-section,
@@ -286,27 +363,37 @@ h2 {
   cursor: pointer;
 }
 
-.social {
-  width: 50%;
-}
-
 .social-img {
   display: flex;
-  width: 32px;
-  height: 32px;
-  margin-left: 1em;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-img p {
+  margin: 0;
 }
 
 .social-img ul {
-  width: 50%;
+  display: flex;
 }
 
-.social-img li {
-  margin: 1em;
+.social-img a {
+  width: 32px;
+  height: 32px;
+  margin-left: 1em;
+  transition: all 300ms ease;
+}
+
+.social-img a:hover {
+  transform: translateY(-5px);
 }
 
 @media (max-width: 870px) {
   /* GENERAL */
+
+  h1 {
+    margin: 0;
+  }
 
   .text-width {
     width: 100%;
@@ -328,6 +415,10 @@ h2 {
   .nav-menu {
     justify-content: center;
   }
+  .nav-menu {
+    margin: 0;
+    padding: 0;
+  }
 
   /* Menu section | Enjoy section | Getyours section */
 
@@ -335,6 +426,7 @@ h2 {
   .enjoy-text,
   .getyours-text {
     font-size: 4.2rem;
+    text-align: center;
   }
 
   /* Ourplace section */
@@ -360,12 +452,24 @@ h2 {
     padding: 1em;
   }
 
-  .mailing-list {
-    width: 100%;
+  .social-img {
     padding: 1em;
+    text-align: center;
   }
 
-  * {
-    text-align: center;
+  /* .mailing-list {
+    width: 100%;
+    padding: 1em;
+    margin: 0;
+  } */
+}
+
+@media (max-width: 400px) {
+  /* Register / Log in form */
+
+  .form-container {
+    width: 375px;
+    top: 0;
+    right: 0;
   }
 }
