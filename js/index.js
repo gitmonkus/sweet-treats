@@ -28,11 +28,24 @@ document.getElementById("sign-up").addEventListener("click", function () {
   formContainer[1].classList.add("hidden");
   formContainer[0].classList.remove("hidden");
 });
+
+// BOTTOM Sign up button
+document
+  .getElementById("btm-signup-btn")
+  .addEventListener("click", function () {
+    formContainer[0].classList.remove("hidden");
+  });
+
 /////////////////////////////////////////////////////////////////////////////////////
 // Display Log in form
 /////////////////////////////////////////////////////////////////////////////////////
 
 document.getElementById("log-in").addEventListener("click", function () {
   formContainer[0].classList.add("hidden");
+  formContainer[1].classList.remove("hidden");
+});
+
+// BOTTOM Log in button
+document.getElementById("btm-login-btn").addEventListener("click", function () {
   formContainer[1].classList.remove("hidden");
 });

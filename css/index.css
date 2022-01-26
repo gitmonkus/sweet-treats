@@ -123,6 +123,10 @@ h4 {
   padding: 0.1em 0;
 }
 
+.announcement-banner span {
+  font-size: inherit;
+}
+
 /* Main Header */
 
 .main-header {
@@ -131,6 +135,7 @@ h4 {
   align-items: center;
   flex-wrap: wrap;
   background: var(--menu-background);
+  position: relative;
 }
 .main-header a:hover {
   transform: translateY(-5px);
@@ -144,7 +149,7 @@ h4 {
   text-align: right;
 }
 
-/* FORM */
+/* REGISTER LOG IN FORMS */
 
 .form-container {
   background: var(--light-color-alpha);
@@ -185,11 +190,6 @@ h4 {
   top: 14%;
   position: relative;
 }
-
-/* .form-close-btn {
-  font-size: 1.2em;
-  padding: 0.1em 0.3em 0;
-} */
 
 input {
   border: 1px solid var(--font-color);
@@ -260,12 +260,16 @@ input:focus {
 
 /* Flavors section | Ourplace section | Desserts section*/
 
+.desserts-btn {
+  display: flex;
+}
+
 .flavors-section,
 .ourplace-section,
 .desserts-section {
   display: flex;
   flex-wrap: wrap;
-  height: 650px;
+  height: 651px;
 }
 
 .flavors-text,
@@ -401,13 +405,17 @@ input:focus {
 
   .width3 {
     width: 100%;
-    /* padding: 1em; */
     text-align: center;
   }
 
   .width2 {
     width: 100%;
     padding: 0;
+  }
+
+  /* ANNOUNCEMENT BANNER */
+  .announcement-banner p {
+    padding: 0 1em;
   }
 
   /* MAIN HEADER */
@@ -456,12 +464,6 @@ input:focus {
     padding: 1em;
     text-align: center;
   }
-
-  /* .mailing-list {
-    width: 100%;
-    padding: 1em;
-    margin: 0;
-  } */
 }
 
 @media (max-width: 400px) {
