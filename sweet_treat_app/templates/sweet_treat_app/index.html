@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Princess+Sofia&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="img/favicon32.png" />
+    <link rel="stylesheet" type="text/css" href="{% static 'sweet_treat_app/css/style.css' %}">
+    <title>Sweet Treats</title>
+  </head>
+  <body>
+    <!-- Announcement Banner START -->
+    <section class="announcement-banner">
+      <p>FREE shipping for orders over $75!</p>
+    </section>
+    <!-- Announcement Banner END -->
+
+    <!-- Header START -->
+    <header class="main-header">
+      <nav class="width3">
+        <ul class="nav-menu">
+          <li><a href="flavors.html">Sweets</a></li>
+          <li><a href="inventory.html">Order NOW!</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <div class="width3"><h1 class="brand">Sweet Treats</h1></div>
+      <div class="width3 log-in"><a href="Log in">Log in</a></div>
+    </header>
+    <!-- Header END -->
+    <!-- Menu START -->
+    <section class="menu-section">
+      <h2 class="white-font z-text">PURELY SWEET</h2>
+      <p class="menu-text white-font z-text">ICE CREAM</p>
+      <p class="button white-font z-text">
+        <a href="flavors.html">SWEETS</a>
+      </p>
+      {% load static %}
+      <img class="menu-img" src="img/menu-bg.png" alt="delicious dessert" />
+    </section>
+    <!-- Menu END -->
+
+    <!-- FLavors START -->
+    <section class="flavors-section overflow">
+      <div class="width2 overflow">
+        <img src="img/ice-cream.jpg" alt="ice cream cones" />
+      </div>
+      <div class="width2 flavors-text">
+        <div class="text-width">
+          <h2>OUR FLAVORS</h2>
+          <h3>Fresh n' Tasty!</h3>
+          <p>
+            I'm a paragraph. Click here to add your own text and edit me. It’s
+            easy. Just click “Edit Text” or double click me to add your own
+            content and make changes to the font.
+          </p>
+          <p class="dark-button">
+            <a href="flavors.html">SWEETS</a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Flavors END -->
+
+    <!-- Enjoy START -->
+    <section class="enjoy-section">
+      <h2 class="mt white-font z-text">Enjoy</h2>
+      <p class="enjoy-text white-font z-text">DAIRY FREE</p>
+      <p class="button white-font z-text">
+        <a href="flavors.html">SWEETS</a>
+      </p>
+      <img
+        class="enjoy-img"
+        src="img/enjoy-ice-cream.png"
+        alt="delicious dessert"
+      />
+    </section>
+    <!-- Enjoy END -->
+
+    <!-- Our place START -->
+    <section class="ourplace-section overflow">
+      <div class="width2 ourplace-text">
+        <div>
+          <h2>OUR PLACE</h2>
+          <h3>Ice Cream by the sea!</h3>
+          <p>
+            I'm a paragraph. Click here to add your own text and edit me. It’s
+            easy. Just click “Edit Text” or double click me to add your own
+            content and make changes to the font.
+          </p>
+          <p class="dark-button">
+            <a href="flavors.html">Sweets</a>
+          </p>
+        </div>
+      </div>
+      <div class="width2 overflow">
+        <img src="img/ice-cream-seller.jpg" alt="ice cream seller" />
+      </div>
+    </section>
+    <!-- Our place END -->
+
+    <!-- Get yours START -->
+    <section class="getyours-section">
+      <h2 class="mt white-font z-text">GET YOURS</h2>
+      <p class="getyours-text white-font z-text">WE DELIVER</p>
+      <p class="button white-font z-text">
+        <a href="flavors.html">ORDER ONLINE</a>
+      </p>
+      <img
+        class="getyours-img"
+        src="img/delivery-truck.png"
+        alt="ice cream delivery truck"
+      />
+    </section>
+    <!-- Get yours END -->
+
+    <!-- Desserts START -->
+    <section class="desserts-section overflow">
+      <div class="width2 overflow">
+        <img src="img/dessert.jpg" alt="four row ice cream plate" />
+      </div>
+      <div class="width2 desserts-text">
+        <h2>DESSERTS</h2>
+        <h3>Ice Cream Goodies</h3>
+        <p>
+          I'm a paragraph. Click here to add your own text and edit me. It’s
+          easy. Just click “Edit Text” or double click me to add your own
+          content and make changes to the font.
+        </p>
+        <p class="dark-button">
+          <a href="flavors.html">Sweets</a>
+        </p>
+      </div>
+    </section>
+    <!-- Desserts END -->
+
+    <!-- Footer START -->
+    <footer class="footer-section">
+      <div class="address-text width2">
+        <div class="width3 address-text-content">
+          <h3>ADDRESS</h3>
+          <p>555 Sweets Dr. Sweetville, SV 09283</p>
+        </div>
+        <div class="width3 address-text-content">
+          <h3>CONTACT</h3>
+          <p>info@sweetsweettreats.com</p>
+          <p>Tel: 555-555-5555</p>
+        </div>
+        <div class="width3 address-text-content">
+          <h3>HOURS</h3>
+          <p>OPEN DAILY</p>
+          <p>10AM-10PM</p>
+        </div>
+      </div>
+      <div class="width2 mailing-list">
+        <h3>MAILING LIST</h3>
+        <form
+          class="form"
+          name="contact"
+          method="POST"
+          data-netlify-recaptcha="true"
+          netlify-honeypot="bot-field"
+          data-netlify="true"
+        >
+          <label for="bot-field" class="hidden"
+            >Don’t fill this out if you’re human:
+
+            <input type="text" name="bot-field"
+          /></label>
+
+          <label for="email"
+            >Email: <input type="email" name="email" required
+          /></label>
+          <div data-netlify-recaptcha="true"></div>
+          <button id="contact-btn" class="button form-btn" type="submit">
+            SUBSCRIBE
+          </button>
+        </form>
+        <div class="social-img">
+          <a href="https://twitter.com"
+            ><img src="img/fb.svg" aria-hidden="true"
+          /></a>
+          <a href="https://facebook.com"
+            ><img src="img/tweet.svg" aria-hidden="true" /></a
+          ><a href="https://instagram.com"
+            ><img src="img/instagram.svg" aria-hidden="true"
+          /></a>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer END -->
+    <script src="js/index.js"></script>
+  </body>
+</html>   
+</body>
+</html>
