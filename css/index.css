@@ -126,7 +126,9 @@ h4 {
 
 /* Main Header */
 
-.main-header {
+.main-header,
+.about-main-header,
+.sweets-main-header {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -134,7 +136,9 @@ h4 {
   background: var(--menu-background);
   position: relative;
 }
-.main-header a:hover {
+.main-header a:hover,
+.about-main-header a:hover,
+.sweets-main-header a:hover {
   transform: translateY(-5px);
   cursor: pointer;
 }
@@ -220,7 +224,9 @@ input:focus {
 /* Menu section | Enjoy section | Getyours section */
 .menu-section,
 .enjoy-section,
-.getyours-section {
+.getyours-section,
+.about-menu-section,
+.sweets-menu-section {
   background: var(--menu-background);
   display: flex;
   justify-content: center;
@@ -262,12 +268,15 @@ input:focus {
   display: flex;
 }
 
+.desserts-section {
+  position: relative;
+}
+
 .flavors-section,
 .ourplace-section,
 .desserts-section {
   display: flex;
   flex-wrap: wrap;
-  /* height: 651px; */
 }
 
 .flavors-text,
@@ -294,9 +303,10 @@ input:focus {
 /* Ourplace section */
 
 .ourplace-text {
-  align-self: center;
-  text-align: center;
-  padding: 0 4em 0 10em;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 4em;
 }
 
 /* Getyours section */
@@ -389,6 +399,26 @@ input:focus {
 
 .social-img a:hover {
   transform: translateY(-5px);
+}
+
+/*////////////////////////////// 
+// ABOUT.HTML
+ ////////////////////////////*/
+
+/* MAIN HEADER | MENU SECTION*/
+.about-main-header,
+.about-menu-section {
+  background: var(--about-html-background);
+}
+
+/*////////////////////////////// 
+// SWEETS.HTML
+ ////////////////////////////*/
+
+/* MAIN HEADER | MENU SECTION*/
+.sweets-main-header,
+.sweets-menu-section {
+  background: var(--enjoy-background);
 }
 
 @media (max-width: 870px) {
