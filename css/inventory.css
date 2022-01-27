@@ -1,249 +1,76 @@
-:root {
-    --light-color: #fff;
-    --light-color-alpha: rgba(255, 255, 255, 0.7);
-    --dark-color: #000;
-    --dark-color-alpha: rgba(0, 0, 0, 0.7);
-    --font-color: #5d6063;
-    --link-color: #5995da;
-    --hover-color: #067ded;
-    --menu-background: #f9db79;
-    --enjoy-background: #b5e8d5;
-    --getyours-background: #ffbfb3;
+.inventory-main-header,
+.inventory-menu-section {
+  background: var(--getyours-background);
 }
 
-/* Main  */
+@media (min-width: 800px) {
+  /* inventory */
 
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body{
-    width: 100%;
-    height: 100vh;
-    font-family: "Roboto", sans-serif;
-    /* color: var(--font-color); */
-    min-width: 400px;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-    margin: 16px;
-    font-size: 1.2rem;
-}
-
-li {
-    list-style: none;
-}
-ul {
-    margin: 0;
-    padding: 0;
-}
-
-
-/* Designs */
-
-.cont-1{
-    background-color: var(--menu-background);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 2rem;
-    min-width: 375px;
-}
-
-nav{
-    display: flex;
-    flex-direction: column;
-}
-
-nav > *{
-    padding: 10px;
-    color: var(--font-color);
-    text-align: center;
-}
-
-nav .logo{
-    font-family: "Princess Sofia", cursive;
-    font-size: 2.5rem;
-}
-
-.introduction{
-    width: 80%;
-    margin: 1rem 0 1rem 0;
-    height: 350px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.introduction button{
-    width: 50%;
-    display: flex;
-    align-content: center;
-    padding: 0;
-}
-
-.introduction button a{
-    width: 100%;
-}
-.introduction div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.introduction div p {
-    width: 80%;
-}
-
-@media (min-width: 800px){
-    nav{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-        width: 60%;
-    }
-
-    nav div{
-        display: flex;
-        justify-content: space-around;
-        width: 40%;
-    }
-
-    .introduction h1{
-        width: 100%;
-        text-align: center;
-    }
-
-    .introduction p{
-        font-size: 1.2rem;
-        line-height: 1.5rem;
-    }
-
-    .introduction button{
-        max-width: 400px;
-    }
-}
-/* inventory */
-
-.inventory-cont{
-
+  .inventory-cont {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 100%;
     padding: 1rem 1rem;
-}
-.inventory-sub-cont{
+  }
+  .inventory-sub-cont {
     width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+  }
 
-.inner-inventory-cont{
+  .inner-inventory-cont {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+  }
 
-.inner-inventory-cont h2{
-    margin-top: 1rem;;   
-}
+  .inner-inventory-cont h2 {
+    margin-top: 1rem;
+  }
 
-.inventory-items{
+  .inventory-items {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+  }
 
-.inventory-items img{
+  .inventory-items img {
     width: 80%;
-}
+  }
 
-.inventory-items > *{
+  .inventory-items > * {
     margin: 1rem 1rem;
-}
+  }
 
-.inventory-items p{
+  .inventory-items p {
     font-size: 1rem;
-}
+  }
 
-.inventory-items button{
+  .inventory-items button {
     width: 50%;
     height: 30px;
     font-size: 1rem;
-}
+  }
 
-.menu{
+  .menu {
     display: none;
-}
+  }
 
-.pending{
+  .pending {
     display: none;
+  }
 }
 
-@media (min-width: 800px){
-    .inventory-sub-cont{
-        max-width: 1000px;
-    }
-    .inventory-items{
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: auto;
-    }
-}
-
-/* footer */
-
-footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--menu-background);
-}
-
-.footer-logo{
-    font-family: "Princess Sofia", cursive;
-    font-size: 2.5rem;
-    margin-top: 1rem;
-}
-.footer-social{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1rem;
-}
-.footer-social li a i{
-    font-size: 2rem;
-}
-
-
-@media (min-width:800px){
-    footer{
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        height: 150px;
-    }
-    .footer-logo{
-        margin: 0;
-    }
-
-    .footer-social{
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-        margin: 0;
-    }
+@media (min-width: 800px) {
+  .inventory-sub-cont {
+    max-width: 1000px;
+  }
+  .inventory-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  }
 }

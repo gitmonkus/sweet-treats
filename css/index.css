@@ -128,7 +128,8 @@ h4 {
 
 .main-header,
 .about-main-header,
-.sweets-main-header {
+.sweets-main-header,
+.inventory-main-header {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -138,7 +139,8 @@ h4 {
 }
 .main-header a:hover,
 .about-main-header a:hover,
-.sweets-main-header a:hover {
+.sweets-main-header a:hover,
+.inventory-main-header a:hover {
   transform: translateY(-5px);
   cursor: pointer;
 }
@@ -147,7 +149,15 @@ h4 {
 }
 
 .log-in {
+  position: relative;
   text-align: right;
+}
+
+.hello-user {
+  position: absolute;
+  font-size: 1.2rem;
+  top: 0;
+  left: 15%;
 }
 
 /* REGISTER LOG IN FORMS */
@@ -226,7 +236,8 @@ input:focus {
 .enjoy-section,
 .getyours-section,
 .about-menu-section,
-.sweets-menu-section {
+.sweets-menu-section,
+.inventory-menu-section {
   background: var(--menu-background);
   display: flex;
   justify-content: center;
