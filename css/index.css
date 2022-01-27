@@ -1,14 +1,11 @@
 :root {
   --light-color: #fff;
   --light-color-alpha: rgba(255, 255, 255, 0.7);
-  --dark-color: #000;
-  --dark-color-alpha: rgba(0, 0, 0, 0.7);
   --font-color: #5d6063;
-  --link-color: #5995da;
-  --hover-color: #067ded;
   --menu-background: #f9db79;
   --enjoy-background: #b5e8d5;
   --getyours-background: #ffbfb3;
+  --about-html-background: #c3a9d4;
 }
 
 /* GENERAL */
@@ -112,7 +109,7 @@ h4 {
 }
 
 .text-width {
-  width: 70%;
+  max-width: 400px;
 }
 
 /* Announcement banner */
@@ -241,6 +238,7 @@ input:focus {
   letter-spacing: 0.1em;
   margin: 0;
   margin-bottom: 0.2em;
+  text-align: center;
 }
 
 .z-text {
@@ -269,13 +267,13 @@ input:focus {
 .desserts-section {
   display: flex;
   flex-wrap: wrap;
-  height: 651px;
+  /* height: 651px; */
 }
 
 .flavors-text,
 .desserts-text {
   text-align: center;
-  padding: 4em;
+  padding: 0 4em;
   align-self: center;
 }
 
@@ -298,8 +296,7 @@ input:focus {
 .ourplace-text {
   align-self: center;
   text-align: center;
-  padding: 0 4em;
-  padding-left: 16%;
+  padding: 0 4em 0 10em;
 }
 
 /* Getyours section */
@@ -379,6 +376,8 @@ input:focus {
 
 .social-img ul {
   display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .social-img a {
@@ -400,7 +399,7 @@ input:focus {
   }
 
   .text-width {
-    width: 100%;
+    max-width: 100%;
   }
 
   .width3 {
@@ -455,14 +454,18 @@ input:focus {
     height: auto;
   }
 
-  .address-text {
-    width: 100%;
-    padding: 1em;
+  .desserts-btn {
+    justify-content: center;
   }
 
+  /* FOOTER */
   .social-img {
     padding: 1em;
     text-align: center;
+  }
+  .address-text {
+    width: 100%;
+    padding: 1em;
   }
 }
 
