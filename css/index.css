@@ -246,6 +246,7 @@ input:focus {
   align-items: center;
   position: relative;
   height: 600px;
+  overflow: hidden;
 }
 
 .menu-text,
@@ -271,6 +272,7 @@ input:focus {
   left: 50%;
   transform: translateX(-50%);
   height: 600px;
+  /* max-width: 100%; */
   z-index: 1;
 }
 
