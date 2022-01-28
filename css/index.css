@@ -110,6 +110,7 @@ h4 {
 
 .text-width {
   max-width: 400px;
+  margin: 4em 0;
 }
 
 /* Announcement banner */
@@ -508,6 +509,17 @@ input:focus {
   .address-text {
     width: 100%;
     padding: 1em;
+  }
+
+  /*////////////////////////////// 
+// SWEETS.HTML
+ ////////////////////////////*/
+
+  .order1 {
+    order: 1;
+  }
+  .order2 {
+    order: 2;
   }
 }
 
