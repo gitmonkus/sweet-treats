@@ -73,67 +73,46 @@
     <section>
       <div class="inventory-cont">
         <div class="inventory-sub-cont">
-          <div class="inner-inventory-cont pickup">
-            <h2>Ready for pickup</h2>
-            <div class="inventory-items">
-              <img
-                src="https://images.unsplash.com/photo-1579954115563-e72bf1381629?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                alt=""
-              />
-              <p>Ice Cream x y z</p>
-              <p>Ready for pickup</p>
-            </div>
-          </div>
-          <div class="inner-inventory-cont making">
-            <h2 class="being-prepared">Orders being prepaired(2)</h2>
-            <div class="pending">
-              <div class="inventory-items">
-                <img
-                  src="https://images.unsplash.com/photo-1579954115563-e72bf1381629?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                  alt=""
-                />
-                <p>Ice cream sunday deluxe</p>
-                <button>Cancel</button>
-              </div>
-            </div>
-          </div>
+
+
           <div class="inner-inventory-cont order">
             <h2 class="our-menu">Our Menu</h2>
-            <div class="menu">
-              <div class="inventory-items">
-                <img
+            <!-- our menu cont -->
+              <div class=" prepairedCont inventory-items">
+                <img 
                   src="https://images.unsplash.com/photo-1579954115563-e72bf1381629?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
                   alt=""
                 />
-                <p>Ice cream sunday deluxe</p>
-                <button>Order</button>
+                <span class="price">$3.99</span>
+                <p class='name-of-item'>Ice Cream #1</p>
+                <button class='order-btn'>Order</button>
               </div>
+          </div>
 
+
+        <!-- shopping cart -->
+          <div class="inner-inventory-cont shopingCart">
+            <h2 class="being-prepared">Cart</h2>
+            <div class="pending-orders">
               <div class="inventory-items">
-                <img
+                <img 
                   src="https://images.unsplash.com/photo-1579954115563-e72bf1381629?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
                   alt=""
                 />
-                <p>Ice cream sunday deluxe</p>
-                <button>Order</button>
+                <input type="number" class='total-units' value=1> 
+                <span class="price">$3.99</span>
+                <p class='name-of-item'>Ice Cream #1</p>
+                <button class='remove-btn'>Remove</button>
               </div>
-
-              <div class="inventory-items">
-                <img
-                  src="https://images.unsplash.com/photo-1579954115563-e72bf1381629?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                  alt=""
-                />
-                <p>Ice cream sunday deluxe</p>
-                <button>Order</button>
-              </div>
-
-              <div class="inventory-items">
-                <img
-                  src="https://images.unsplash.com/photo-1579954115563-e72bf1381629?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                  alt=""
-                />
-                <p>Ice cream sunday deluxe</p>
-                <button>Order</button>
+              <!-- cart total -->
+              <div class="total-price-cont">
+                <div class="price-cont">
+                  <span class="total-price-title">Total</span>
+                  <span class='total-price-value'>$40,00</span>
+                </div>
+                <div class="checkout-btn-cont">
+                  <button class='checkout-btn'>Checkout</button>
+                </div>
               </div>
             </div>
           </div>
