@@ -32,25 +32,25 @@
     text-align: center;
   }
 
-  .inventory-items, .prepairedCont{
+  .inventory-items, .checkout-items{
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .inventory-items img {
+  .inventory-items img, .checkout-items img{
     width: 80%;
   }
 
-  .inventory-items > * {
+  .inventory-items > * , .checkout-items >*{
     margin: 1rem 1rem;
   }
 
-  .inventory-items p {
+  .inventory-items p, .checkout-items p {
     font-size: 1rem;
   }
 
-  .inventory-items button {
+  .inventory-items button, .checkout-items button {
     width: 50%;
     height: 30px;
     font-size: 1rem;
@@ -58,7 +58,7 @@
   
   .total-units{
     text-align: center;
-    width: 50%;
+    width: 30%;
     height: 10px;
     font-size: 15px;
   }
@@ -91,7 +91,7 @@
   .inventory-sub-cont {
     max-width: 1000px;
   }
-  .inventory-items {
+  .inventory-items, .checkout-items {
     display: grid;
     grid-template-columns: 1fr 0.5fr 0.5fr 1fr 1fr;
     grid-template-rows: auto;
@@ -102,5 +102,9 @@
 
   .price{
     text-align: center;
+  }
+
+  .total-units{
+    width: 80%;
   }
 }
