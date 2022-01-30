@@ -91,11 +91,17 @@
   .inventory-sub-cont {
     max-width: 1000px;
   }
-  .inventory-items, .checkout-items {
+  .checkout-items {
     display: grid;
     grid-template-columns: 1fr 0.5fr 0.5fr 1fr 1fr;
     grid-template-rows: auto;
   }
+  .inventory-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+  }
+
   .prepairedCont{
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }

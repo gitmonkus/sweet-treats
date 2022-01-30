@@ -26,8 +26,6 @@ function ready(){
     document.getElementsByClassName('checkout-btn')[0].addEventListener('click', purchaseClicked)
 }
 
-
-
 function purchaseClicked(){
     alert('thank you for your purchase');
     let elementsInsideCart = document.querySelector('.pending-orders')
@@ -78,12 +76,6 @@ function addItemToCart(title, price, imageSrc) {
     cartContainerToAdd.getElementsByClassName('remove-btn')[0].addEventListener('click', removeCartItem)
     cartContainerToAdd.getElementsByClassName('total-units')[0].addEventListener('change', changeValue)
 }
-
-
-
-
-
-
 
 function removeCartItem(event) {
     let buttonClicked = event.target
