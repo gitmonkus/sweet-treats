@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    {% load static %}
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,8 +20,8 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" href="img/favicon32.png" />
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="icon" href=" {% static 'sweet_treat_app/img/favicon32.png' %} " />
+    <link rel="stylesheet" href=" {% static 'sweet_treat_app/css/index.css' %} " />
     <title>Sweet Treats</title>
   </head>
   <body>
@@ -34,11 +35,10 @@
     <!-- Announcement Banner END -->
 
     <!-- Header START -->
-    <header class="main-header">
+    <header class="sweets-main-header">
       <nav class="width3">
         <ul class="nav-menu">
           <li><a href="index.html">HOME</a></li>
-
           <li><a href="sweets.html">SWEETS</a></li>
           <li><a href="about.html">ABOUT</a></li>
         </ul>
@@ -109,98 +109,108 @@
     <!-- LOG IN FORM END -->
 
     <!-- Menu START -->
-    <section class="menu-section">
-      <h2 class="white-font z-text">PURELY SWEET</h2>
-      <p class="menu-text white-font z-text">ICE CREAM</p>
-      <p>
-        <a class="button white-font z-text" href="sweets.html">SWEETS</a>
-      </p>
-      <img class="menu-img" src="img/menu-bg.png" alt="delicious dessert" />
+    <section class="sweets-menu-section">
+      <h2 class="white-font z-text">DECUDANT</h2>
+      <p class="menu-text white-font z-text">DESSERTS</p>
+      <!-- <p>
+        <a class="button white-font z-text" href=" {% static 'sweet_treat_app/sweets.html' %} ">SWEETS</a>
+      </p> -->
+      <img class="menu-img" src=" {% static 'sweet_treat_app/img/decudant.png' %} " alt="delicious dessert" />
     </section>
     <!-- Menu END -->
 
-    <!-- FLavors START -->
+    <!-- First Sweet START -->
     <section class="flavors-section overflow">
-      <div class="width2 overflow">
-        <img src="img/ice-cream.jpg" alt="ice cream cones" />
+      <div class="width2 overflow order1">
+        <img src=" {% static 'sweet_treat_app/img/nutDream.jpg' %} " alt="ice cream cones" />
       </div>
-      <div class="width2 flavors-text">
+      <div class="width2 flavors-text order2">
         <div class="text-width">
-          <h2>YUMMY AND DELICIOUS</h2>
-          <h3>I SCREAM for ice cream!</h3>
+          <h2>Amazing Nutty Dream!</h2>
+          <h3>I SCREAM for the pistachio dream!</h3>
           <p>
-            Only the Freshest, Organic, Non-GMO, Gluten-free, no preservitives
-            added ingredients... without losing the
-            <span class="brand">Sweet Treats</span>, mouth watering delight!
-          </p>
-          <p>
-            <a class="dark-button" href="sweets.html">SWEETS</a>
+            Endulge yourself in the breathtaking smooth texture of the pistachio
+            dream ice cream. Where health meets sweet, but doesn't lose the
+            <span class="brand">Sweet Treats</span>, mouth watering delight! A
+            combination of almonds and pistachio, swirled together in the
+            softest, smoothest, and richest non-fat, non-dairy creamer turned into the most delicate soft serve.
           </p>
         </div>
       </div>
     </section>
-    <!-- Flavors END -->
+    <!-- First Sweet  END -->
 
-    <!-- Enjoy START -->
-    <section class="enjoy-section">
-      <h2 class="mt white-font z-text">Enjoy</h2>
-      <p class="enjoy-text white-font z-text">DAIRY FREE</p>
-      <p>
-        <a class="button white-font z-text" href="sweets.html">SWEETS</a>
-      </p>
-      <img
-        class="enjoy-img"
-        src="img/enjoy-ice-cream.png"
-        alt="delicious dessert"
-      />
-    </section>
-    <!-- Enjoy END -->
-
-    <!-- Our place START -->
+    <!-- Second Sweet START -->
     <section class="ourplace-section overflow">
-      <div class="width2 ourplace-text">
+      <div class="width2 ourplace-text order2">
         <div class="text-width">
-          <h2>OUR PLACE</h2>
-          <h3>Ice Cream by the sea!</h3>
+          <h2>Super Sweet Plate!</h2>
+          <h3>I SCREAM for the super sweet dream!</h3>
           <p>
-            Relax at OUR PLACE and enjoy the refreshing sea breeze and soft
-            sandy beaches. Curly your toes under the hot sand as you endulge
-            yourself with amazing -- <span class="brand">Sweet Treats</span>.
-          </p>
-          <p>
-            <a class="dark-button" href="about.html">ABOUT</a>
+            Relax. Take a bite. Imagine the most decudant dream. Where every
+            muscle in your body relaxes as you take each and every spoonful of
+            this delightful and decudant, ice cream fruity drizzle masterpiece.
+            <p>Taking <span class="brand">Sweet Treats</span> to a whole new level of enjoyment.  
+              A compination of rich chocolate mousse soft serve, milk-chocolate drizzle and a 
+              combination of refreshing fruits.</p>
           </p>
         </div>
       </div>
-      <div class="width2 overflow">
-        <img src="img/ice-cream-seller.jpg" alt="ice cream seller" />
+      <div class="width2 overflow order1">
+        <img src=" {% static 'sweet_treat_app/img/dessert.jpg' %} " alt="ice cream plate with fruit" />
       </div>
     </section>
-    <!-- Our place END -->
+    <!-- Second Sweet END -->
 
-    <!-- Get yours START -->
-    <section class="getyours-section">
-      <h2 class="mt white-font z-text">INSTANT</h2>
-      <p class="getyours-text white-font z-text">CLASSIC</p>
-      <p>
-        <a class="button white-font z-text" href="sweets.html">SWEETS</a>
-      </p>
-      <img
-        class="getyours-img"
-        src="img/delivery-truck.png"
-        alt="ice cream delivery truck"
-      />
+    <!-- Third Sweet START -->
+    <section class="flavors-section overflow">
+      <div class="width2 overflow order1">
+        <img src=" {% static 'sweet_treat_app/img/sweetBowl.jpg' %} " alt="ice cream cones" />
+      </div>
+      <div class="width2 flavors-text order2">
+        <div class="text-width">
+          <h2>The Sweetness Bowl!</h2>
+          <h3>I SCREAM for the bowl of dreams!</h3>
+          <p>
+            When you want to get straight down to business.  Mixing multiple ice cream delight flavors 
+            together, to create the ultimate ice cream dream bowl.  This is what life is about!  
+            Choose any flavor, chuck in some fresh fruit, and sit back and dream the <span class="brand">Sweet Treats</span> dream.  
+            
+          </p>
+        
+        </div>
+      </div>
     </section>
-    <!-- Get yours END -->
+    <!-- Third Sweet END -->
+
+    <!-- Fourth Sweet START -->
+    <section class="ourplace-section overflow">
+      <div class="width2 ourplace-text order2">
+        <div class="text-width">
+          <h2>Da' Delicate Waffle!</h2>
+          <h3>I SCREAM for the most delicate dream!</h3>
+          <p>
+           Feast your eyes, senses, and mouth watering sensations on the most delicate <span class="brand">Sweet Treats</span> toasted waffle. 
+           Combine that with your choice of the most decudant, soft, smooth, and delicate soft serve ice cream.
+          Top it all off with your choice of fresh, sweet, and creamy drizzle -- that will slow down time.
+          </p>
+       
+        </div>
+      </div>
+      <div class="width2 overflow order1">
+        <img src=" {% static 'sweet_treat_app/img/delicateWaffle.jpg' %} " alt="ice cream seller" />
+      </div>
+    </section>
+    <!-- Fourth Sweet END -->
 
     <!-- Desserts START -->
     <section class="desserts-section overflow">
       <div class="width2 overflow">
-        <img src="img/dessert.jpg" alt="four row ice cream plate" />
+        <img src=" {% static 'sweet_treat_app/img/enjoy.jpg' %} " alt="four row ice cream plate" />
       </div>
       <div class="width2 desserts-text">
         <div class="text-width">
-          <h2>YUMMY TREATS</h2>
+          <h2>Enjoy the little things!</h2>
           <h3>You deserve to treat yourself!</h3>
           <p>SIGN UP and LOG IN, NOW!</p>
           <p>
@@ -244,23 +254,23 @@
         <ul>
           <li>
             <a href="https://twitter.com"
-              ><img src="img/fb.svg" alt="facebook icon social media"
+              ><img src=" {% static 'sweet_treat_app/img/fb.svg' %} " alt="facebook icon social media"
             /></a>
           </li>
           <li>
             <a href="https://facebook.com"
-              ><img src="img/tweet.svg" alt="twitter icon social media"
+              ><img src=" {% static 'sweet_treat_app/img/tweet.svg' %} " alt="twitter icon social media"
             /></a>
           </li>
           <li>
             <a href="https://instagram.com"
-              ><img src="img/instagram.svg" alt="instagram icon social media"
+              ><img src=" {% static 'sweet_treat_app/img/instagram.svg' %} " alt="instagram icon social media"
             /></a>
           </li>
         </ul>
       </div>
     </footer>
     <!-- Footer END -->
-    <script src="js/index.js"></script>
+    <script src=" {% static 'sweet_treat_app/js/index.js' %} "></script>
   </body>
 </html>

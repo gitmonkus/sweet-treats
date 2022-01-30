@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-c=7t5obi7_h7#)n__ukbv5y0x+hq=_j@cna8^-%9t9cb$&d&hr
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['sweet-treats-818.herokuapp.com']
 
 
 # Application definition
@@ -120,14 +120,15 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-# STATIC_URL = '/static/'
-STATIC_URL = '/staticfiles/'
+STATIC_URL = '/static/'
+# STATIC_URL = '/staticfiles/'
 
-STATIC_ROOT = os.path.normpath(os.path.join(BASE_DIR, 'apps/sweet_treat_app/staticfiles'))
+STATIC_ROOT = os.path.normpath(os.path.join(BASE_DIR, 'apps/sweet_treat_app/static'))
 
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'apps/sweet_treat_app/static'),
-)
+# STATICFILES_DIRS = (
+#     os.path.join(BASE_DIR, 'apps/sweet_treat_app/static'),
+# )
+# lines 128 - line 130 not needed if static root is utilized
 
 mimetypes.add_type("text/css", ".css", True)
 
