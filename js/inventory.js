@@ -1,9 +1,11 @@
+// we check if the DOM is fully loaded 
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', ready)
 } else {
     ready()
 }
 
+// function runs when its ready
 function ready(){
     const removeBtns = document.getElementsByClassName('remove-btn');
     for (let i = 0; i < removeBtns.length; i++) {
