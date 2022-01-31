@@ -15,9 +15,11 @@ from django.urls import path, re_path
 from . import views
 
 urlpatterns = [
-    path('', views.index),	  
+    path('', views.index),
+    path('index.html', views.index),	  
     path('sweets.html', views.sweets),
-    path('about.html', views.about)
+    path('about.html', views.about),
+    path('inventory.html', views.inventory),
   
 
     

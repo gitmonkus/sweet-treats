@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    {% load static %}
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,9 +20,18 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" href="img/favicon32.png" />
-    <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/inventory.css" />
+    <link
+      rel="icon"
+      href=" {% static 'sweet_treat_app/img/favicon32.png' %} "
+    />
+    <link
+      rel="stylesheet"
+      href=" {% static 'sweet_treat_app/css/index.css' %} "
+    />
+    <link
+      rel="stylesheet"
+      href=" {% static 'sweet_treat_app/css/inventory.css' %} "
+    />
 
     <title>Sweet Treats - Inventory</title>
   </head>
@@ -60,11 +70,11 @@
       <h2 class="white-font z-text">INSATIABLE</h2>
       <p class="menu-text white-font z-text">INVENTORY</p>
       <!-- <p>
-        <a class="button white-font z-text" href="sweets.html">SWEETS</a>
+        <a class="button white-font z-text" href=" {% static 'sweet_treat_app/sweets.html' %} ">SWEETS</a>
       </p> -->
       <img
         class="menu-img"
-        src="img/delivery-truck.png"
+        src=" {% static 'sweet_treat_app/img/delivery-truck.png' %} "
         alt="delicious dessert"
       />
     </section>
@@ -74,49 +84,88 @@
     <section>
       <div class="inventory-cont">
         <div class="inventory-sub-cont">
-
-
           <div class="inner-inventory-cont order">
-            <h2 class="our-menu">Our Menu</h2>
+            <div class="order-header-container">
+              <h2 class="our-menu">Our Menu</h2>
+              <p class="in-stock-header">Available</p>
+              <p class="out-of-stock-header">Unavailable</p>
+            </div>
+
             <!-- our menu cont -->
+            <div class="inventory-item-container">
+              <p class="in-stock">Unavailable</p>
               <div class="inventory-items">
-                <img class='img-item'
-                  src="https://images.unsplash.com/photo-1579954115563-e72bf1381629?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                  alt=""
+                <img
+                  class="img-item"
+                  src=" {% static 'sweet_treat_app/img/nutDream.jpg' %} "
+                  alt="ice cream cones"
                 />
-                <span class="price">$3.99</span>
-                <p class='shop-item'>Ice Cream #1</p>
-                <button class='order-btn'>Order</button>
+                <span class="price">$9.99</span>
+                <p class="shop-item">Amazing Nutty Dream!</p>
+                <button class="order-btn dark-button">Order</button>
               </div>
+            </div>
+
+            <div class="inventory-item-container">
+              <p class="in-stock">Available</p>
 
               <div class="inventory-items">
-                <img class='img-item'
-                  src="https://images.unsplash.com/photo-1579954115563-e72bf1381629?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-                  alt=""
+                <img
+                  class="img-item"
+                  src=" {% static 'sweet_treat_app/img/dessert.jpg' %} "
+                  alt="ice cream plate with fruit"
                 />
-                <span class="price">$3.99</span>
-                <p class='shop-item'>Ice Cream #4</p>
-                <button class='order-btn'>Order</button>
+                <span class="price">$7.99</span>
+                <p class="shop-item">Super Sweet Plate!</p>
+                <button class="order-btn dark-button">Order</button>
               </div>
-              
+            </div>
+
+            <div class="inventory-item-container">
+              <p class="in-stock">Unavailable</p>
+
+              <div class="inventory-items">
+                <img
+                  class="img-item"
+                  src=" {% static 'sweet_treat_app/img/sweetBowl.jpg' %} "
+                  alt="ice cream cones"
+                />
+
+                <span class="price">$11.99</span>
+                <p class="shop-item">The Sweetness Bowl!</p>
+                <button class="order-btn dark-button">Order</button>
+              </div>
+            </div>
+
+            <div class="inventory-item-container">
+              <p class="in-stock">Available</p>
+
+              <div class="inventory-items">
+                <img
+                  class="img-item"
+                  src=" {% static 'sweet_treat_app/img/delicateWaffle.jpg' %} "
+                  alt="ice cream seller"
+                />
+
+                <span class="price">$6.99</span>
+                <p class="shop-item">Da' Delicate Waffle!</p>
+                <button class="order-btn dark-button">Order</button>
+              </div>
+            </div>
           </div>
 
-
-        <!-- shopping cart -->
+          <!-- shopping cart -->
           <div class="inner-inventory-cont shopingCart">
             <h2 class="being-prepared">Cart</h2>
-            <div class="pending-orders">
-
-
-            </div>
+            <div class="pending-orders"></div>
             <!-- cart total -->
             <div class="total-price-cont">
               <div class="price-cont">
                 <span class="total-price-title">Total</span>
-                <span class='total-price-value'>$40,00</span>
+                <span class="total-price-value">$0.00</span>
               </div>
               <div class="checkout-btn-cont">
-                <button class='checkout-btn'>Checkout</button>
+                <button class="checkout-btn dark-button">Checkout</button>
               </div>
             </div>
           </div>
@@ -151,17 +200,23 @@
         <ul>
           <li>
             <a href="https://twitter.com"
-              ><img src="img/fb.svg" alt="facebook icon social media"
+              ><img
+                src=" {% static 'sweet_treat_app/img/fb.svg' %} "
+                alt="facebook icon social media"
             /></a>
           </li>
           <li>
             <a href="https://facebook.com"
-              ><img src="img/tweet.svg" alt="twitter icon social media"
+              ><img
+                src=" {% static 'sweet_treat_app/img/tweet.svg' %} "
+                alt="twitter icon social media"
             /></a>
           </li>
           <li>
             <a href="https://instagram.com"
-              ><img src="img/instagram.svg" alt="instagram icon social media"
+              ><img
+                src=" {% static 'sweet_treat_app/img/instagram.svg' %} "
+                alt="instagram icon social media"
             /></a>
           </li>
         </ul>
@@ -169,5 +224,5 @@
     </footer>
     <!-- Footer END -->
   </body>
-  <script src="js/inventory.js"></script>
+  <script src=" {% static 'sweet_treat_app/js/inventory.js' %} "></script>
 </html>

@@ -12,6 +12,8 @@ def index(request):
 def sweets(request):
     return render(request,'sweet_treat_app/sweets.html')
 
-
 def about(request):
     return render(request,'sweet_treat_app/about.html')
+
+def inventory(request):
+    return render(request,'sweet_treat_app/inventory.html')
