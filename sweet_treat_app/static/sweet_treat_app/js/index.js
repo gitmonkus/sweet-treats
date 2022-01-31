@@ -24,7 +24,8 @@ formCloseBtn[1].addEventListener("click", function () {
 // Display Sign up form
 /////////////////////////////////////////////////////////////////////////////////////
 
-document.getElementById("sign-up").addEventListener("click", function () {
+const signUpEl = document.getElementById("sign-up");
+signUpEl.addEventListener("click", function () {
   formContainer[1].classList.add("hidden");
   formContainer[0].classList.remove("hidden");
 });
@@ -40,7 +41,8 @@ document
 // Display Log in form
 /////////////////////////////////////////////////////////////////////////////////////
 
-document.getElementById("log-in").addEventListener("click", function () {
+const logInEl = document.getElementById("log-in");
+logInEl.addEventListener("click", function () {
   formContainer[0].classList.add("hidden");
   formContainer[1].classList.remove("hidden");
 });
