@@ -199,9 +199,9 @@ async function checkIfLoggedIn() {
     userId = json.id;
     // funObject.name = json.name;
     funObject.email = json.email;
-    console.log(json, "THIS IS JSON");
-    console.log(userId);
-    console.log(funObject);
+    // console.log(json, "THIS IS JSON");
+    // console.log(userId);
+    // console.log(funObject);
     isLoggedIn();
   } catch (e) {
     console.error(e);
