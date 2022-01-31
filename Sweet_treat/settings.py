@@ -29,6 +29,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'sweet-treats-818.herokuapp.com',
+    'pure-caverns-71325.herokuapp.com',
     '127.0.0.1'
 ]
 
